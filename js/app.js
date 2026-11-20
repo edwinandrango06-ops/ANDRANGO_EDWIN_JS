@@ -171,12 +171,29 @@ do{
         }
 
         case "3": {
+        let reporteIngresos =
+                `CONSULTA DE INGRESOS - INNOVA ESPE 2026\n\n` +
+                `Total de entradas vendidas: ${entradasVendidas}\n` +
+                `Total de ingresos acumulados: $${totalRecaudado.toFixed(2)}\n` +
+                `Número de compras realizadas: ${comprasRealizadas}`;
 
+            alert(reporteIngresos);
+            console.log(reporteIngresos);
+            console.log("--------------------------------------------------");
             break;
         }
 
         case "4": {
+            let resumenFinal =
+                `RESUMEN FINAL - INNOVA ESPE 2026\n\n` +
+                `Total de compras realizadas: ${comprasRealizadas}\n` +
+                `Total de entradas vendidas: ${entradasVendidas}\n` +
+                `Cupos restantes: ${cuposDisponibles}\n` +
+                `Total de ingresos acumulados: $${totalRecaudado.toFixed(2)}\n\n` +
+                `Sistema finalizado. ¡Gracias por utilizar Innova ESPE 2026!`;
 
+            alert(resumenFinal);
+            console.log(resumenFinal);
             break;
         }
 
