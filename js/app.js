@@ -149,7 +149,24 @@ do{
         }
 
         case "2": {
+            let mensajeDisponibilidad = "";
 
+            if (cuposDisponibles > 10) {
+                mensajeDisponibilidad = "Cupos disponibles";
+            } else if (cuposDisponibles >= 1 && cuposDisponibles <= 10) {
+                mensajeDisponibilidad = "Últimos cupos disponibles";
+            } else {
+                mensajeDisponibilidad = "Evento agotado";
+            }
+
+            let reporteCupos =
+                `CONSULTA DE CUPOS - INNOVA ESPE 2026\n\n` +
+                `Cupos disponibles: ${cuposDisponibles}\n` +
+                `Estado: ${mensajeDisponibilidad}`;
+
+            alert(reporteCupos);
+            console.log(reporteCupos);
+            console.log("--------------------------------------------------");
             break;
         }
 
